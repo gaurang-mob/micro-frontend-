@@ -10,7 +10,7 @@ export default defineConfig({
       name: "host",
       remotes: {
         reactApp: "http://localhost:5001/assets/remoteEntry.js",
-        vueApp: "http://localhost:5005/assets/remoteEntry.js",
+        vueApp: "http://localhost:5002/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom"],
     }),

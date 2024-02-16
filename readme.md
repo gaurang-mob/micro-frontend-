@@ -1,5 +1,9 @@
 ### pnpm setup
-- brew install pnpm
+- Why PNPM?
+- Fast (pnpm is up to 2x faster than npm)
+- More Efficient (Files inside node_modules are cloned or hard linked from a single content-addressable storage)
+- Supports monorepos (pnpm has built-in support for multiple packages in a repository)
+```brew install pnpm```
 - https://pnpm.io/
 
 ### Vite
@@ -12,8 +16,7 @@
     - pnpm create vite host --template react 
     - cd host
     - Open package.json
-    - Set strict port to dev and preview  --port 5000 --strictPort
-    - Replace the src with src-host-app
+    - Replace the src with zip/src-host-app
     - pnpm dev
  
 ### react-app (Create the react-app application)
@@ -22,12 +25,12 @@
     - pnpm i
     - open package.json
     - Set strict port to dev and preview  --port 5001 --strictPort
-    - Replace the src with src-react-app
+    - Replace the src with zip/src-react-app
     - pnpm dev
 
 ### Module Federation
-- Multiple separate builds should form a single application. These separate builds act like containers and can expose and consume code between builds, creating a single, unified application.
-- This is often known as Micro-Frontend, but is not limited to that.
+- Multiple separate builds form a single application. 
+- These separate builds act like containers and can expose and consume code between builds, creating a single, unified application.
 - https://webpack.js.org/concepts/module-federation/
 
 ### Vite Plugin Federation 
@@ -50,7 +53,7 @@
     - pnpm i
     - open package.json
     - Set strict port to dev and preview  --port 5002 --strictPort
-    - Replace the src with src-vue-app
+    - Replace the src with zip/src-vue-app
     - pnpm dev
     - pnpm add @originjs/vite-plugin-federation -D
     - Update vite.config.js
