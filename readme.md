@@ -1,5 +1,4 @@
-### pnpm setup
-- Why PNPM?
+### PNPM (Why PNPM?)
 - Fast (pnpm is up to 2x faster than npm)
 - More Efficient (Files inside node_modules are cloned or hard linked from a single content-addressable storage)
 - Supports monorepos (pnpm has built-in support for multiple packages in a repository)
@@ -12,7 +11,7 @@
 - A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
 - https://vitejs.dev/
 
-### host (Create the Host application)
+### host Application | Container (Create the Host application)
     - pnpm create vite host --template react 
     - cd host
     - Open package.json
